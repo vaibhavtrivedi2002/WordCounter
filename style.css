@@ -1,0 +1,53 @@
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .input-box {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            #inputText, #countButton {
+                /* Make elements wrap if content overflows on smaller screens */
+                flex-wrap: wrap;
+            }
+        }
+
+        #inputText {
+            padding: 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            /* Maintain your preferred width for all screen sizes */
+            width: 300px;
+            /* Added for responsiveness: set a minimum height for the textarea */
+            min-height: 300px;
+        }
+
+        #countButton {
+            padding: 10px 20px;
+            background-color: #1baec8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #wordCount {
+            font-size: 18px;
+            margin-top: 10px;
+        }
